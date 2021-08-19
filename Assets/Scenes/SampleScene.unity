@@ -1668,3 +1668,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _launchforce: 1000
+  _maxDragDistance: 3.5
