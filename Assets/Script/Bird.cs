@@ -11,6 +11,9 @@ public class Bird : MonoBehaviour
     Vector2 _startPosition;
     Rigidbody2D _rigidbody2D;
     SpriteRenderer _spriteRenderer;
+    bool _resetting;
+
+    public bool IsDragging { get; private set; }
     
     void Awake()
     {
@@ -24,9 +27,10 @@ public class Bird : MonoBehaviour
         _rigidbody2D.isKinematic = true;
     }
 
-    void OnMouseDown()
+    void OnmouseDown()
     {
         _spriteRenderer.color = Color.red;
+        IsDragging = true;
     }
     
     void OnMouseUp()
@@ -39,6 +43,7 @@ public class Bird : MonoBehaviour
         _rigidbody2D.AddForce(direction * _launchforce);
 
         _spriteRenderer.color = Color.white;
+        IsDragging = false;
     }
 
     void OnMouseDrag()
@@ -58,6 +63,7 @@ public class Bird : MonoBehaviour
             desiredPosition.x = _startPosition.x;
 
         _rigidbody2D.position = desiredPosition;
+        IsDragging = true;
     }
 
     // Update is called once per frame

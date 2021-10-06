@@ -6286,11 +6286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1206248651297597863, guid: 30edf8772092b9844a33db4efb93d8b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -11.08
       objectReference: {fileID: 0}
     - target: {fileID: 1206248651297597863, guid: 30edf8772092b9844a33db4efb93d8b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1206248651297597863, guid: 30edf8772092b9844a33db4efb93d8b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6494,6 +6494,14 @@ PrefabInstance:
     - target: {fileID: 5180949008651035722, guid: 6adb86fde5af94345b4884eece128677, type: 3}
       propertyPath: m_Name
       value: Camera Setup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742679165238165602, guid: 6adb86fde5af94345b4884eece128677, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.371455
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742679165238165661, guid: 6adb86fde5af94345b4884eece128677, type: 3}
+      propertyPath: orthographic size
+      value: 5.56709
       objectReference: {fileID: 0}
     - target: {fileID: 8742679165325453751, guid: 6adb86fde5af94345b4884eece128677, type: 3}
       propertyPath: m_Targets.Array.data[0].target
